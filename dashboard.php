@@ -1,4 +1,5 @@
 <?php
+require "./controler/conexion.php";
 
     session_start();
 
@@ -19,11 +20,9 @@
     $tipo_usuario = $_SESSION['id_perfil'];
    
     $formated_DATE = date('Y-m-d');
-    $sql = "INSERT INTO acces (nombre_usuario, rol_usuario, fecha) VALUES ('$nombre', '$tipo_usuario', '$formated_DATE')";
+    $consulta = "INSERT INTO acces (nombre_usuario, rol_usuario, fecha) VALUES ('0', '$nombre', '$tipo_usuario', '$formated_DATE')";
     
-
-     
-
+ 
 ?>
 
 <!DOCTYPE html>
@@ -655,6 +654,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Financiero BI:</h6>
                             <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiMWJiOWJjMmYtNjEyZS00MDA2LTk4ZTYtYzIwNmNlMmFjN2YwIiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9">P&G Comercial</a>
+                            <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiY2Y0YzM0NzEtNDA4MS00NmFhLWEzMDYtYWRiYWNhYzU0N2Y5IiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9&pageName=ReportSection394b7cfe3b4aa403e20b">P&G Financiero</a>
                         </div>
                     </div>
                 </li>
@@ -844,6 +844,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Financiero BI:</h6>
                             <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiMWJiOWJjMmYtNjEyZS00MDA2LTk4ZTYtYzIwNmNlMmFjN2YwIiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9">P&G Comercial</a>
+                            <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiY2Y0YzM0NzEtNDA4MS00NmFhLWEzMDYtYWRiYWNhYzU0N2Y5IiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9&pageName=ReportSection394b7cfe3b4aa403e20b">P&G Financiero</a>
                         </div>
                     </div>
                 </li>
@@ -878,6 +879,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Financiero BI:</h6>
                             <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiMWJiOWJjMmYtNjEyZS00MDA2LTk4ZTYtYzIwNmNlMmFjN2YwIiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9">P&G Comercial</a>
+                            <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiY2Y0YzM0NzEtNDA4MS00NmFhLWEzMDYtYWRiYWNhYzU0N2Y5IiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9&pageName=ReportSection394b7cfe3b4aa403e20b">P&G Financiero</a>
                         </div>
                     </div>
                 </li>
@@ -928,6 +930,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Financiero BI:</h6>
                             <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiMWJiOWJjMmYtNjEyZS00MDA2LTk4ZTYtYzIwNmNlMmFjN2YwIiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9">P&G Comercial</a>
+                            <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiY2Y0YzM0NzEtNDA4MS00NmFhLWEzMDYtYWRiYWNhYzU0N2Y5IiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9&pageName=ReportSection394b7cfe3b4aa403e20b">P&G Financiero</a>
                         </div>
                     </div>
                 </li>
@@ -1090,6 +1093,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Financiero BI:</h6>
                             <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiMWJiOWJjMmYtNjEyZS00MDA2LTk4ZTYtYzIwNmNlMmFjN2YwIiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9">P&G Comercial</a>
+                            <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiY2Y0YzM0NzEtNDA4MS00NmFhLWEzMDYtYWRiYWNhYzU0N2Y5IiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9&pageName=ReportSection394b7cfe3b4aa403e20b">P&G Financiero</a>
                         </div>
                     </div>
                 </li>
@@ -1308,6 +1312,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Financiero BI:</h6>
                             <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiMWJiOWJjMmYtNjEyZS00MDA2LTk4ZTYtYzIwNmNlMmFjN2YwIiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9">P&G Comercial</a>
+                            <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiY2Y0YzM0NzEtNDA4MS00NmFhLWEzMDYtYWRiYWNhYzU0N2Y5IiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9&pageName=ReportSection394b7cfe3b4aa403e20b">P&G Financiero</a>
                         </div>
                     </div>
                 </li>
@@ -1503,6 +1508,7 @@
                         <div class="bg-white py-2 collapse-inner rounded">
                             <h6 class="collapse-header">Financiero BI:</h6>
                             <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiMWJiOWJjMmYtNjEyZS00MDA2LTk4ZTYtYzIwNmNlMmFjN2YwIiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9">P&G Comercial</a>
+                            <a class="collapse-item" target="proyector" href="https://app.powerbi.com/view?r=eyJrIjoiY2Y0YzM0NzEtNDA4MS00NmFhLWEzMDYtYWRiYWNhYzU0N2Y5IiwidCI6IjNmOTU5M2UxLTU1ZGEtNDQyZi05M2RkLTU3Y2NmNzVmNGI3OCIsImMiOjR9&pageName=ReportSection394b7cfe3b4aa403e20b">P&G Financiero</a>
                         </div>
                     </div>
                 </li>
